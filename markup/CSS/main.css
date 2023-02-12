@@ -1,5 +1,9 @@
+*{
+	box-sizing: border-box;
+}
+
 body {
-	display: flex;
+	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	min-height: 60vh;
@@ -10,39 +14,37 @@ body {
 
 .section {
 	width: 1000px;
-	height: 330px;
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
-
+	margin-left: 270px;
 }
 
 .row {
 	width: 100%;
-	display: flex;
 	justify-content: space-between;
 	padding: 30px;
 }
 
 img {
-	position: static;
-	width: 220px;
-	display: flex;
+	position: relative;
+	width: 250px;
 	border-radius: 10px;
-	
+	margin-left: 25px;
+	margin-top: 25px;
 }
 
 .infBlock {
-	width: 30%;
-	height: 500px;
-	border-radius: 10px;
+	display: inline-block;
+	width: 300px;
+	height: 520px;
+	border-radius: 20px;
 	box-shadow: 0 0 15px rgba(0,0,0,.3);
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	transition: .2s;
+	position: relative;
+	overflow: hidden;
 }
 
 .infText {
@@ -63,12 +65,10 @@ img {
 	text-align: inherit;
 	margin-left: 10px;
 	margin-right: 10px;
-	color: rgb(62, 62, 62);
-
 }
 
 .btn {
-	position: relative;
+	position: static;
 	text-decoration: none;
 	color: #058cdd;
 	background: #fff;
@@ -79,7 +79,7 @@ img {
 	border-radius: 30px;
 	opacity: 0;
 	transition: 0.2s;
-
+	margin: 25px;
 }
 
 .infBlock:hover {
